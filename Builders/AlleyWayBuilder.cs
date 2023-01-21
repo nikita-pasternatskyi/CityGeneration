@@ -106,7 +106,7 @@ namespace Assets.CityGen.Rewrite
                         var key = network.GetKey(roundedPosition);
                         if (network.Grid.ContainsKey(key))
                         {
-                            if (network.Grid[key].GetType() == typeof(BuildingCell))
+                            if (network.Grid[key].GetType() == typeof(BuildingSpace))
                                 network.Grid[key] = new AlleyWay(roundedPosition);
                         }
                     }
@@ -119,7 +119,7 @@ namespace Assets.CityGen.Rewrite
                         var key = network.GetKey(roundedPosition);
                         if (network.Grid.ContainsKey(key))
                         {
-                            if (network.Grid[key].GetType() == typeof(BuildingCell))
+                            if (network.Grid[key].GetType() == typeof(BuildingSpace))
                                 network.Grid[key] = new AlleyWay(roundedPosition);
                         }
                     }
